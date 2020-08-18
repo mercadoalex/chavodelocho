@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="JS Game board project for OpenClassrooms">
+    <meta name="author" content="Alejandro Mercado">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Chavo del Ocho wants all 'Tortas'</title>
+
+     <!-- Bootstrap core CSS -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+     <!--<link href="bootstrap/css/bootstrap.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-bottom">
+    <div class="container">
+      <a class="navbar-brand" href="#" name="translate" caption="welcome"> Welcome to my Game!</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+ <!-- Page Content -->
+  <section>
+    <div class="container">
+      <div class="row">
+          <div class="col-md-2 col-lg-4">
+          <button id="es_button" type="button" class="btn btn-info .align-middle">Español</button>
+          <button id="en_button" type="button" class="btn btn-secondary .align-middle">English</button>
+          <button id="pt_button" type="button" class="btn btn-warning .align-middle"> Portugues</button>
+            <div name="translate" caption="instructions">Instructions</div>
+            <div>
+            <i class="fa fa-quote-left fa-3x fa-pull-left fa-border" aria-hidden="true"></i>
+            ...tomorrow we will run faster, stretch out our arms farther...
+            And then one fine morning&mdash; So we beat on, boats against the
+            current, borne back ceaselessly into the past.
+            <audio loop autoplay controls id="myAudio" >
+              <source src="assets/chavo-del-ocho.mp3" type="audio/mpeg">
+              Your browser does not support the audio element.
+            </audio>
+            <audio id="audio2" >
+              <source src="assets/pipipipi.mp3" type="audio/mpeg">
+            </audio>
+            <audio id="audio3" >
+                <source src="assets/nomesimpatizas.mp3" type="audio/mpeg">
+            </audio>
+           </div>
+        </div>
+        <div class="col-xs-12 col-md-10 col-lg-8" .align-left>
+                <div id="board">
+                  <div id="gameBoard">
+                   </div> 
+                 </div>
+                <!-- Your Webgage Content Goes Here -->
+                 <!-- <div id="playerInfo">
+                <div class="player"></div>
+                <div class="player"></div>
+                </div> -->
+        </div>
+      </div> 
+    </div>
+  </section>
+   <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
+   <script src="bootstrap/js/bootstrap.js"></script>
+   <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+   <script src="jquery/jquery.min.js"></script>
+   <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+   <script src="game.js"></script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+body {
+    /* background: url('http://placehold.it/1920x1080') no-repeat center center fixed; */
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    background-color: darkgrey;
+}
+* {
+    box-sizing: border-box;
+}
+#board {
+    display:grid;
+    width: 70%;
+    /* height: 90vh; */
+    /*  grid-template-columns: 4fr 2fr; */
+    /* grid-gap: 5px; */
+    /* outline: 1px solid black; */
+    /* margin: 100px auto;*/
+}
+#gameBoard {
+    height: 80vh;
+    padding: 10px 0px;
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+}
+.square {
+    width: 60px;
+    height: 60px;
+    outline: 2px solid #5a5959ad;
+    position:relative;
+    background: rgb(255, 255, 255);
+    border-radius: 5px;
+}
+.donramon {
+    background: url("images/ramon_static.png") no-repeat;
+    background-color: white;
+}
+.torta{
+    background: url("images/torta.png") no-repeat;
+    background-color: white;
+}
+.supertorta{
+    background: url("images/supertorta.png") no-repeat;
+    background-color: white;
+}
+.resortera{
+    background: url("images/resortera.png") no-repeat;
+    background-color: white;
+}
+.barrel{
+    background: url("images/barril.png") no-repeat;
+    background-color: white;
+}
+.player1 {
+    background: url("images/chavo.png") no-repeat;
+    background-color: greenyellow; 
+}
+.player2 {
+    background: url("images/kiko.png") no-repeat;
+    background-color: yellow;
+}
+
+
+
+
