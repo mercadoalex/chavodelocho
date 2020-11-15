@@ -7,7 +7,7 @@ I'll use phaser, I doscivered it later and seems to be a good option.
 
 
 ![Image of Chavo del 8]
-(https://github.com/mercadoalex/chavodelocho/issues/1#issue-743292025)
+(https://github.com/mercadoalex/chavodelocho/blob/master/assets/00.jpeg)
 
 This a no lucrative project made by me.
 
