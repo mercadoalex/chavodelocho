@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="JS Game board project for OpenClassrooms">
+    <meta name="author" content="Alejandro Mercado">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Chavo del Ocho wants all 'Tortas'</title>
+
+     <!-- Bootstrap core CSS -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-bottom">
+    <div class="container">
+      <a class="navbar-brand" href="#" name="translate" caption="welcome"> Welcome to my Game!</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+ <!-- Page Content -->
+  <section>
+    <div class="container">
+      <div class="row content">
+            <div class="col-xs-12 col-md-10 col-lg-8"  .align-left>
+              <div id="game-field"> </div>
+              <strong>Instructions</strong><br>
+              Help Chavo del 8 (player 1) to eat all tortas but take care of "the annoying neighbor" Don Ramo and the landlord "Mr. Barriga"
+              and of course of Kiko (Player 2) the harvesting friend.
+              So ...  is your turn. Have fun! <p>  
+              <button id="start-game" class="btn btn-warning"> Start Game</button>   
+              
+            <audio autoplay controls id="myAudio" class="btn" >
+              <source src="assets/chavo-del-ocho.mp3" type="audio/mpeg">
+              Your browser does not support the audio element.
+            </audio>
+            </div>
+          <div class="col-md-2 col-lg-4">
+          <button id="en_button" type="button" class="btn btn-info  .align-middle">English</button>
+          <button id="es_button" type="button" class="btn btn-secondary .align-middle">Español</button>
+          <button id="pt_button" type="button" class="btn btn-secondary .align-middle"> Portuguese</button>
+          <div class="sidenavChavo player1-content">
+              <strong>Player 1</strong><img src="images/chavo_anim.gif" id="chavo">
+              Life: <span id="player1-health"></span>
+              <h2 class="player-life player1-life "></h2>
+              Element:<span id="player1-weapon" class= "player-weapon"></span>
+              Damage: <span id="player1-damage"></span> 
+              <div class="player-buttons player1-buttons hidden">
+                <button id="attack1" class="btn btn-danger fightButton attackButton">Attack</button>
+                <button id="defend1" class="btn btn-success fightButton defendButton">Defend</button>
+              </div> 
+          </div>
+          <div class="sidenavKiko player2-content">
+            <strong>Player 2</strong><img src="images/kiko_anim.gif" id="kiko">
+            Life: <span id="player2-health"></span>
+            <h2 class="player-life player2-life "></h2>
+	      	  Element: <span id="player2-weapon" class= "player-weapon"></span>
+	      	  Damage:  <span id="player2-damage"></span>
+            <div class="player-buttons player2-buttons hidden">
+              <button id="attack2" class="btn btn-danger fightButton2 attackButton">Attack</button>
+              <button id="defend2" class="btn btn-success fightButton2 defendButton">Defend</button>
+            </div> 
+          </div>     
+        </div>
+      </div> 
+    </div>
+  </section>
+   <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script> -->
+   <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+   <!--  <script src="bootstrap/js/bootstrap.js"></script> -->
+   <!--  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+   <script src="https://code.jquery.com/jquery-3.5.0.js"></script> 
+   <!--  <script src="jquery/jquery.min.js"></script> -->
+   
+  <script src="js/game.js"></script>
+</body>
+</html>

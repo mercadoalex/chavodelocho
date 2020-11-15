@@ -1,0 +1,280 @@
+body {
+    /* background: url('http://placehold.it/1920x1080') no-repeat center center fixed; */
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    background-color: darkgrey;
+}
+* {
+    box-sizing: border-box;
+}
+#board {
+    display:grid;
+    width: 70%;
+    /* height: 90vh; */
+    /*  grid-template-columns: 4fr 2fr; */
+    /* grid-gap: 5px; */
+    /* outline: 1px solid black; */
+    /* margin: 100px auto;*/
+}
+#gameBoard {
+    height: 80vh;
+    padding: 10px 0px;
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+}
+.square {
+    width: 60px;
+    height: 60px;
+    outline: 2px solid #5a5959ad;
+    position:relative;
+    background: rgb(255, 255, 255);
+    border-radius: 5px;
+}
+.donramon {
+    background: url("images/ramon_static.png") no-repeat;
+    background-color: white;
+}
+.torta{
+    background: url("images/torta.png") no-repeat;
+    background-color: white;
+}
+.supertorta{
+    background: url("images/supertorta.png") no-repeat;
+    background-color: white;
+}
+.resortera{
+    background: url("images/resortera.png") no-repeat;
+    background-color: white;
+}
+.barrel{
+    background: url("images/barril.png") no-repeat;
+    background-color: white;
+}
+.player1 {
+    background: url("images/chavo.png") no-repeat;
+    
+}
+.player2 {
+    background: url("images/kiko.png") no-repeat;
+}
+.activePlayer {
+    background-color: greenyellow; 
+}
+.highlighted {
+    background-color:yellow; 
+    opacity: 1.0;
+}
+.highlighted:hover {
+    opacity: 0.4;
+  }
+
+#overlay { 
+    position:absolute;
+    z-index:10;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    background-color:#f00;
+    filter:alpha(opacity=10);
+    -moz-opacity:0.1;
+    opacity:0.1;
+    cursor:pointer;
+
+} 
+.dialog {
+    position:absolute;
+    border:2px solid #3366CC;
+    width:400px;
+    height:400px;
+    background-color:#ffffff;
+    z-index:12;
+}
+
+
+/* Remove the navbar's default margin-bottom and rounded borders */
+.navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+}
+
+/*player1 is chavo  and player2 is kiko */
+
+#chavo {
+    widows: 100px;
+    display: block;
+    margin: 0 auto;
+}
+
+#kiko {
+    widows: 100px;
+    display: block;
+    margin: 0 auto;
+}
+
+
+/* Adding the images to the players classes*/
+
+.grid-item.unavailable.player1 {
+    background-image: url("images/chavo.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 60px 70px;
+    margin: auto;
+}
+
+.grid-item.unavailable.player2 {
+    background-image: url("images/kiko.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 60px 70px;
+    margin: auto;
+}
+
+
+/* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+.row.content {
+    height: 450px
+}
+
+
+/* Set gray background color and 100% height */
+
+.sidenavChavo {
+    /*background-color: #90929059;*/
+    background-color:white;
+    border-radius: 7px;
+    margin-top: 10px;
+}
+
+.sidenavKiko {
+    /*background-color: #74a3e6;*/
+    background-color:white;
+    border-radius: 7px;
+    margin-top: 10px;
+}
+
+
+/* Set black background color, white text and some padding */
+
+footer {
+    background-color: #555;
+    color: white;
+    padding: 15px;
+}
+
+
+/* On small screens, set height to 'auto' for sidenav and grid */
+
+@media screen and (max-width: 767px) {
+    .sidenav {
+        height: auto;
+        padding: 15px;
+    }
+    .row.content {
+        height: auto;
+    }
+}
+
+#game-field {
+    border-radius: 7px;
+    padding-right: 1px;
+    padding-left: 1px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+.grid-item {
+    background-color: rgb(218, 241, 241);
+    outline: 1px solid rgba(1, 195, 1, 0.493);
+    border-radius: 7px;
+    width: 60px;
+    height: 50px;
+    display: inline-flex;
+    margin: 0px auto;
+}
+
+.grid-item.unavailable {
+    background: #616161;
+}
+
+.grid-item.weapons {
+    background-color: rgb(253, 253, 253);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 60px 50px;
+    margin: auto;
+}
+
+.player-weapon {
+    width: 60px;
+    height: 50px;
+    display: inline-flex;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 60px 50px;
+    margin: auto;
+}
+
+.grid-item.weapon1,
+.player-weapon.weapon1 {
+    background-image: url("images/torta.png");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.grid-item.weapon2,
+.player-weapon.weapon2 {
+    background-image: url("images/supertorta.png");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.grid-item.weapon3,
+.player-weapon.weapon3 {
+    background-image: url("images/resortera.png");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.grid-item.weapon4,
+.player-weapon.weapon4 {
+    background-image: url("images/ramon_static.png");
+}
+
+.grid-item.weapon5,
+.player-weapon.weapon5 {
+    background-image: url("images/barriga.png");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.grid-item.block {
+    background-image: url("images/barril2.png");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.active-player {
+    border: 5px ridge red;
+}
+
+.highlight {
+    background-color: #45fb18;
+    cursor: pointer;
+}
+
+.player-life {
+    color: #ff0000;
+}
+.hidden {
+    display: none!important;
+}
+
+
+
+
