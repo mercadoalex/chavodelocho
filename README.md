@@ -5,7 +5,9 @@ This version is just jQuery, Boostrap and of course JavaScript (object oriented)
 My first attempat was with p5.js but there is no good documentatation.
 I'll use phaser, I doscivered it later and seems to be a good option. 
 
-https://github.com/mercadoalex/chavodelocho/issues/1#issue-743292025
+
+![Image of Chavo del 8]
+(https://github.com/mercadoalex/chavodelocho/issues/1#issue-743292025)
 
 This a no lucrative project made by me.
 
