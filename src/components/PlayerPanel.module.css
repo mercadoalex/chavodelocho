@@ -1,0 +1,131 @@
+/* PlayerPanel — sidebar displaying player info, HP, weapon, and combat controls */
+
+.panel {
+  background: #3a2218;
+  border: 2px solid #5c4a1e;
+  border-radius: 8px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.active {
+  border-color: #ffd700;
+  box-shadow: 0 0 12px rgba(255, 215, 0, 0.5), 0 0 24px rgba(255, 215, 0, 0.2);
+}
+
+/* Animated character GIF */
+.avatar {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+
+/* HP section */
+.hpSection {
+  width: 100%;
+  text-align: center;
+}
+
+.hpLabel {
+  font-size: 0.85rem;
+  margin-bottom: 0.25rem;
+  color: #ccc;
+}
+
+.hpBarOuter {
+  width: 100%;
+  height: 18px;
+  background: #1a0e08;
+  border-radius: 9px;
+  overflow: hidden;
+  border: 1px solid #5c4a1e;
+}
+
+.hpBarInner {
+  height: 100%;
+  border-radius: 9px;
+  transition: width 0.4s ease, background-color 0.4s ease;
+}
+
+.hpValue {
+  font-size: 0.8rem;
+  margin-top: 0.2rem;
+  color: #eee;
+  font-weight: bold;
+}
+
+/* Weapon section */
+.weaponSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.weaponLabel {
+  font-size: 0.85rem;
+  color: #ccc;
+}
+
+.weaponImage {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+}
+
+.damageText {
+  font-size: 0.85rem;
+  color: #ff9800;
+  font-weight: bold;
+}
+
+/* Combat buttons (Player 1 only) */
+.combatButtons {
+  display: flex;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.attackBtn,
+.defendBtn {
+  flex: 1;
+  padding: 0.5rem 0.75rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.15s, filter 0.15s;
+}
+
+.attackBtn {
+  background: #d32f2f;
+  color: #fff;
+}
+
+.attackBtn:hover {
+  filter: brightness(1.15);
+  transform: scale(1.03);
+}
+
+.defendBtn {
+  background: #1976d2;
+  color: #fff;
+}
+
+.defendBtn:hover {
+  filter: brightness(1.15);
+  transform: scale(1.03);
+}
+
+/* AI status text */
+.aiStatus {
+  font-size: 0.9rem;
+  color: #ffd700;
+  font-style: italic;
+  text-align: center;
+}

@@ -1,0 +1,59 @@
+/* GameOverModal — centered card shown on game over */
+
+.card {
+  background: linear-gradient(135deg, #3e2723, #5d4037);
+  border: 3px solid #ffb300;
+  border-radius: 16px;
+  padding: 2rem 2.5rem;
+  text-align: center;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6);
+  max-width: 360px;
+  width: 90%;
+  animation: popIn 0.3s ease-out;
+}
+
+@keyframes popIn {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.winnerImage {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  margin-bottom: 1rem;
+}
+
+.winnerText {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ffb300;
+  margin: 0 0 1.5rem;
+}
+
+.playAgainBtn {
+  background: #ffb300;
+  color: #2c1810;
+  border: none;
+  border-radius: 8px;
+  padding: 0.75rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s;
+}
+
+.playAgainBtn:hover {
+  background: #ffc107;
+  transform: scale(1.05);
+}
+
+.playAgainBtn:active {
+  transform: scale(0.97);
+}

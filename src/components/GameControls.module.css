@@ -1,0 +1,78 @@
+.gameControls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  padding: 0.5rem 0;
+}
+
+.startButton {
+  background: #e8a735;
+  color: #2c1810;
+  border: none;
+  border-radius: 6px;
+  padding: 0.6rem 1.5rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.startButton:hover {
+  background: #f0c060;
+}
+
+.audioController {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.audioButton {
+  background: #5a3a28;
+  color: #fff;
+  border: 1px solid #e8a735;
+  border-radius: 4px;
+  padding: 0.35rem 0.75rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.audioButton:hover {
+  background: #7a5a48;
+}
+
+.volumeSlider {
+  width: 80px;
+  accent-color: #e8a735;
+}
+
+.languageSelector {
+  display: flex;
+  gap: 0.35rem;
+}
+
+.langButton {
+  background: #5a3a28;
+  color: #ccc;
+  border: 1px solid #5a3a28;
+  border-radius: 4px;
+  padding: 0.3rem 0.6rem;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: background 0.2s, border-color 0.2s, color 0.2s;
+}
+
+.langButton:hover {
+  background: #7a5a48;
+  color: #fff;
+}
+
+.langButtonActive {
+  background: #e8a735;
+  color: #2c1810;
+  border-color: #e8a735;
+  font-weight: 700;
+}

@@ -1,0 +1,50 @@
+/* App layout — three-column responsive grid */
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: #2c1810;
+  color: #fff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header {
+  text-align: center;
+  padding: 0.5rem 1rem;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 1rem;
+  flex: 1;
+  padding: 0.5rem 1rem;
+  align-items: start;
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.controls {
+  text-align: center;
+  padding: 0.5rem 1rem;
+}
+
+.gameOverOverlay {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 100;
+}
+
+/* Responsive: stack on smaller viewports */
+@media (max-width: 767px) {
+  .main {
+    grid-template-columns: 1fr;
+  }
+}

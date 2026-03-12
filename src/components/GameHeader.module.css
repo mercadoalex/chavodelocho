@@ -1,0 +1,17 @@
+.header {
+  text-align: center;
+  padding: 0.5rem 1rem;
+}
+
+.title {
+  margin: 0;
+  font-size: 1.8rem;
+  color: #ffd700;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.turnIndicator {
+  margin: 0.25rem 0 0;
+  font-size: 1.1rem;
+  color: #e0d8c8;
+}
